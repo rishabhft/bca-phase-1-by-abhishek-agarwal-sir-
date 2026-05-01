@@ -131,12 +131,12 @@ int main() {
 }
 
 
-//program 6  
-// customer support IVR system 
-// 1 -- for 
-// 
-//
-// 4 -- talk to agent 
+// Problem -- 6
+// Customer supoort IVR system 
+// 1 -- for support 
+// 2 -- for billing 
+// 3 -- Technical Issue 
+// 4 -- Talk to Agent 
 
 #include <iostream>
 using namespace std;
@@ -163,5 +163,34 @@ int main(){
          cout <<"enter a valid choice..";
          
          
+    }
+}
+
+
+// Problem 7 -- Nested if-else condition 
+// Smart home lighting 
+// Day -- Motion (Yes / no) -- Light off
+// night -- Motion (yes -- 100%) (no -- 10%)
+
+ #include <iostream>
+using namespace std;
+
+int main() {
+    string dayOrNight;
+    bool motionDetected;
+    
+    cout << "is it Day or Night?..";
+    cin >> dayOrNight;
+    cout << "Is motion detected?..";
+    cin >> motionDetected;
+    
+    if(dayOrNight == "Night" || dayOrNight == "night"){
+        if(motionDetected){
+            cout << "Turn ON the LED with 100% brightness";
+        } else {
+            cout << "Turn ON the LED with 10% brightness";
+        }
+    } else {
+        cout << "Turn OFF the Lights...";
     }
 }
