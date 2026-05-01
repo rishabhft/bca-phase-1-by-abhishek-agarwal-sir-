@@ -129,3 +129,39 @@ int main() {
         cout <<"Enter a valid number...";
     }
 }
+
+
+//program 6  
+// customer support IVR system 
+// 1 -- for 
+// 
+//
+// 4 -- talk to agent 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    cout << "choice a number";
+    cin >> choice;
+    
+    switch(choice){
+        case 1:
+        cout <<"transferring call to the support team...";
+        break;
+        case 2:
+        cout <<"transferring call to the billing and account department...";
+         break;
+        case 3:
+        cout <<"conecting call to the technical teaem... ";
+         break;
+        case 4:
+        cout <<"please wait while  we are connecting your call to an agent...";
+         break;
+         default:
+         cout <<"enter a valid choice..";
+         
+         
+    }
+}
